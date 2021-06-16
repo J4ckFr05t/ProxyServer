@@ -15,37 +15,27 @@ except Exception as e:
 	print(colored("Unable to connect to File Server\n",'white'))
 	sys.exit()
 
-def read():
+def client():
 	while True:
 		try:
 			message=input("Enter filename\t: ")
 			if message == 'exit':
 				break
+			elif message == "":
+				continue
 			else:
 				msg = message
 				sock.send(msg.encode())
+
+				message = sock.recv(2048)
+				print(colored("\n"+message.decode(),'cyan'))
+
 		except KeyboardInterrupt:
 			break
 
-def fetch():
-	while True:
-		message = sock.recv(2048)
-		if message.decode() == "quit":
-			print("Server shutting down. Type exit\n$:",end="")
-			break
-		elif message.decode() == "exit":
-			print("\nBye")
-			break
-		else:
-			print(colored("\n"+message.decode(),'cyan'))
-			print('\nEnter filename\t: ',end="")
 	
-	
-t1 = threading.Thread(target =  read)
+t1 = threading.Thread(target =  client)
 t1.start()
-t2 = threading.Thread(target = fetch)
-t2.start()
 
 t1.join()
-t2.join()
 sock.close()
