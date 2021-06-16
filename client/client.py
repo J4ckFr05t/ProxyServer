@@ -30,7 +30,8 @@ def client():
 				message = sock.recv(2048)
 				print(colored("\n"+message.decode(),'cyan'))
 
-		except KeyboardInterrupt:
+		except Exception as e:
+			print("Unable to connect")
 			break
 
 	

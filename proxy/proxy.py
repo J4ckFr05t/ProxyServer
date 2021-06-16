@@ -4,6 +4,8 @@ import threading
 import sys
 from termcolor import colored   #for highlighting
 
+threads = []
+clients = []
 tcpSerSock = socket(AF_INET, SOCK_STREAM)
 tcpSerSock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
 PROXY_SERV = '127.0.0.1'
@@ -63,14 +65,37 @@ def proxy(tcpCliSock, addr):
 			except:
 				break
 
+def shutdown():
+	while True:
+		cmd = input()
+		if cmd == "quit":
+			tcpSerSock.close()
+			for client in clients:
+				client.send("exit".encode())
+				client.close()
+			break
+		else:
+			continue
+
+sd = threading.Thread(target=shutdown)
+sd.start()
+
 while True:
 	try:
 		tcpCliSock, addr = tcpSerSock.accept()
+		clients.append(tcpCliSock)
 		print(colored("[INFO] ",'green'),end="")
 		print(colored(str(addr[0])+':'+str(addr[1]),'cyan'),end="")
 		print(colored(' connected','white'))
-		th = threading.Thread(target=proxy, args=(tcpCliSock,addr))
-		th.start()
-	except KeyboardInterrupt:
-		tcpSerSock.flush()
-		tcpSerSock.close()
+		t = threading.Thread(target=proxy, args=(tcpCliSock,addr))
+		threads.append(t)
+		t.start()
+	except:
+		break
+
+for t in threads:
+    t.join()
+
+sd.join()
+print(colored("[INFO] ",'green'),end="")
+print(colored("Proxy Server has shutdown",'white'))
