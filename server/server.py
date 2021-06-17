@@ -54,7 +54,7 @@ def send(fiLe, connection, address):
             content = f.read()
             f.close()
             pid = os.getpid()
-            msg = "Process ID: "+str(pid)+"\n"+fiLe+":\n"+content
+            msg = content
             print(colored("[SEND] ",'green'),end="")
             print(colored("Sending requested file to "+str(address[0])+":"+str(address[1]),'white'))
             connection.send(msg.encode())

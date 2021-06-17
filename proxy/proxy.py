@@ -46,29 +46,33 @@ def proxy(tcpCliSock, addr):
 							server.send(filename.encode())
 							data = server.recv(2048)
 							print(colored("[INFO] ",'green'),end="")
-							print(colored("File found in Server. Sending to "+str(addr[0])+':'+str(addr[1]),'white'))
+							print(colored(filename+" found in Server. Sending to "+str(addr[0])+':'+str(addr[1]),'white'))
 							tcpCliSock.send(data)
 							server.send("exit".encode())	#disconnect from server
 							server.close()
 							if "Nil" not in data.decode():
 								print(colored("[INFO] ",'green'),end="")
-								print(colored("Writing"+filename+"to Proxy Server",'yellow'))
+								print(colored("Writing "+filename+"to Proxy Server",'yellow'))
 								w = open(filepath,'w')
 								w.write(data.decode())
 								w.close()
 
 						except:
 							tcpCliSock.send("Unable to connect to Server".encode())
+							print(colored("[INFO] ",'green'),end="")
+							print(colored("Unable to connect to Server",'yellow'))
 				else:
 					continue
 				
-			except:
+			except Exception as e:
 				break
 
 def shutdown():
 	while True:
 		cmd = input()
 		if cmd == "quit":
+			print(colored("[INFO] ",'green'),end="")
+			print(colored("Shutdown signal recieved",'yellow'))
 			tcpSerSock.close()
 			for client in clients:
 				client.send("exit".encode())
@@ -97,5 +101,5 @@ for t in threads:
     t.join()
 
 sd.join()
-print(colored("[INFO] ",'green'),end="")
+print(colored("[SHUTDOWN] ",'green'),end="")
 print(colored("Proxy Server has shutdown",'white'))
