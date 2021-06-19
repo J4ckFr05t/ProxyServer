@@ -65,7 +65,7 @@ def proxy(tcpCliSock, addr):
 								w.close()
 
 						except:
-							tcpCliSock.send("Unable to connect to Server".encode())
+							tcpCliSock.send("Unable to fetch file / file not found".encode())
 							print(colored("[INFO] ",'green'),end="")
 							print(colored("Unable to connect to Server",'yellow'))
 
