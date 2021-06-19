@@ -28,7 +28,10 @@ def client():
 				sock.send(msg.encode())
 
 				message = sock.recv(2048)
-				print(colored("\n"+message.decode(),'cyan'))
+				if message.decode() == "exit":
+					print(colored("\nLost connection with Proxy Server",'cyan'))
+				else:
+					print(colored("\n"+message.decode(),'cyan'))
 
 		except Exception as e:
 			print("Unable to connect")

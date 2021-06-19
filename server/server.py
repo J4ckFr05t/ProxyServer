@@ -31,16 +31,22 @@ def clientthread(conn, addr):
     while True: 
             try: 
                 message = conn.recv(2048)
-                if message.decode()!="exit":
-                    send(message.decode(), conn, addr)
-  
-                elif message.decode() == "exit":
+                if message.decode() == "exit":
                     print(colored("[INFO] ",'green'),end="")
                     print(colored(str(addr[0])+":"+str(addr[1]),'cyan'),end="")
                     print(colored(" left the server",'white'))
                     esms = "exit"
                     remove(conn)
                     break
+
+                elif message.decode() == "quit":
+                    print(colored("[SHUTDOWN] ",'green'),end="")
+                    print(colored("Got shutdown signal",'white'))
+                    server.close()
+                    break
+
+                else:
+                    send(message.decode(), conn, addr)
   
             except: 
                 continue
@@ -53,7 +59,6 @@ def send(fiLe, connection, address):
             f = open(file_path,'r')
             content = f.read()
             f.close()
-            pid = os.getpid()
             msg = content
             print(colored("[SEND] ",'green'),end="")
             print(colored("Sending requested file to "+str(address[0])+":"+str(address[1]),'white'))
@@ -69,6 +74,7 @@ def remove(connection):
     if connection in list_of_clients: 
         list_of_clients.remove(connection)
 
+"""
 def shutdown():
     while True:
         cmd = input()
@@ -77,9 +83,10 @@ def shutdown():
             break
         else:
             print("Server Running")
+"""
 
-sd = threading.Thread(target=shutdown)
-sd.start()
+#sd = threading.Thread(target=shutdown)
+#sd.start()
   
 while True:
     try:
@@ -95,6 +102,7 @@ while True:
 
 for th in all_threads:
     th.join()
-sd.join()
+
+#sd.join()
 print(colored("[INFO] ",'green'),end="")
 print(colored("Server has shutdown",'white'))

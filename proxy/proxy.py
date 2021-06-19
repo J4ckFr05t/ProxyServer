@@ -19,7 +19,14 @@ def proxy(tcpCliSock, addr):
 		while True:
 			try:
 				message =  tcpCliSock.recv(2048)
-				if message.decode() != "":
+				if message.decode() == "quit":
+					tcpSerSock.close()
+					for client in clients:
+						client.send("exit".encode())
+						client.close()
+					break
+					
+				elif message.decode() != "":
 					print(colored("[INFO] ",'green'),end="")
 					print(colored("Message from ",'white'),end="")
 					print(colored(str(addr[0])+":"+str(addr[1]),'cyan'),end="")
@@ -61,12 +68,13 @@ def proxy(tcpCliSock, addr):
 							tcpCliSock.send("Unable to connect to Server".encode())
 							print(colored("[INFO] ",'green'),end="")
 							print(colored("Unable to connect to Server",'yellow'))
+
 				else:
 					continue
 				
 			except Exception as e:
 				break
-
+"""
 def shutdown():
 	while True:
 		cmd = input()
@@ -83,6 +91,7 @@ def shutdown():
 
 sd = threading.Thread(target=shutdown)
 sd.start()
+"""
 
 while True:
 	try:
@@ -100,6 +109,6 @@ while True:
 for t in threads:
     t.join()
 
-sd.join()
+#sd.join()
 print(colored("[SHUTDOWN] ",'green'),end="")
 print(colored("Proxy Server has shutdown",'white'))
