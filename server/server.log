@@ -1,0 +1,9 @@
+2021-06-20 10:34:27,948 Using Public Directory /Users/jibingeorge/Documents/NP/ProxyServer/server/www/
+2021-06-20 10:34:27,948 Server running on port 8081
+2021-06-20 10:34:35,646 127.0.0.1:49457 connected
+2021-06-20 10:34:35,647 Sending /Users/jibingeorge/Documents/NP/ProxyServer/server/www/file3 to 127.0.0.1:49457
+2021-06-20 10:34:35,647 127.0.0.1:49457 left server
+2021-06-20 10:34:43,277 127.0.0.1:49459 connected
+2021-06-20 10:34:43,277 Got shutdown signal
+2021-06-20 10:34:43,277 Closing server socket
+2021-06-20 10:34:43,278 Server has shutdown

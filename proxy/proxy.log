@@ -1,0 +1,29 @@
+2021-06-20 10:34:16,204 Server running on port 8888
+2021-06-20 10:34:24,895 127.0.0.1:49452 connected
+2021-06-20 10:34:24,896 127.0.0.1:49452 Requesting www/file
+2021-06-20 10:34:24,896 www/file not found in Proxy Server. Requesting from Server
+2021-06-20 10:34:24,896 Unable to fetch file / file not found
+2021-06-20 10:34:24,896 [Errno 61] Connection refused
+2021-06-20 10:34:31,708 127.0.0.1:49454 connected
+2021-06-20 10:34:31,710 127.0.0.1:49454 Requesting www/file1
+2021-06-20 10:34:31,710 file1 found in Proxy Server. Sending to 127.0.0.1:49454
+2021-06-20 10:34:33,564 127.0.0.1:49455 connected
+2021-06-20 10:34:33,566 127.0.0.1:49455 Requesting www/file2
+2021-06-20 10:34:33,571 file2 found in Proxy Server. Sending to 127.0.0.1:49455
+2021-06-20 10:34:35,645 127.0.0.1:49456 connected
+2021-06-20 10:34:35,645 127.0.0.1:49456 Requesting www/file3
+2021-06-20 10:34:35,646 www/file3 not found in Proxy Server. Requesting from Server
+2021-06-20 10:34:35,646 Connected to Server. Fetching file3 from server
+2021-06-20 10:34:35,647 Writing www/file3 to Proxy Server
+2021-06-20 10:34:41,694 127.0.0.1:49458 connected
+2021-06-20 10:34:41,695 Closing Proxy Server socket
+2021-06-20 10:34:41,695 Shutting down
+2021-06-20 10:34:41,695 something went wrong
+2021-06-20 10:34:41,695 [Errno 54] Connection reset by peer
+2021-06-20 10:34:41,696 something went wrong
+2021-06-20 10:34:41,696 [Errno 9] Bad file descriptor
+2021-06-20 10:34:41,696 something went wrong
+2021-06-20 10:34:41,696 something went wrong
+2021-06-20 10:34:41,696 [Errno 54] Connection reset by peer
+2021-06-20 10:34:41,696 [Errno 9] Bad file descriptor
+2021-06-20 10:34:41,697 Server has shutdown
