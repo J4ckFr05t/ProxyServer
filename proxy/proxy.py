@@ -52,9 +52,15 @@ def proxy(tcpCliSock, addr):
 							print(colored("Connected to Server. Fetching from server",'white'))
 							server.send(filename.encode())
 							data = server.recv(2048)
-							print(colored("[INFO] ",'green'),end="")
-							print(colored(filename+" found in Server. Sending to "+str(addr[0])+':'+str(addr[1]),'white'))
-							tcpCliSock.send(data)
+							if data.decode() != 'Nil':
+								print(colored("[INFO] ",'green'),end="")
+								print(colored(filename+" found in Server. Sending to "+str(addr[0])+':'+str(addr[1]),'white'))
+								tcpCliSock.send(data)
+							else:
+								print(colored("[INFO] ",'green'),end="")
+								print(colored(filename+" not found in Server.",'yellow'))
+								tcpCliSock.send("File not found".encode())
+
 							server.send("exit".encode())	#disconnect from server
 							server.close()
 							if "Nil" not in data.decode():
