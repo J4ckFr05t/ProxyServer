@@ -1,0 +1,27 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Proxy Server",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/electron/electron-api-demos.git"
+  },
+  "author": "Jibin George",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/electron/electron-api-demos/issues"
+  },
+  "homepage": "https://github.com/electron/electron-api-demos#readme",
+  "devDependencies": {
+    "electron": "13.1.2"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "python-shell": "^3.0.0",
+    "require": "^2.4.20"
+  }
+}
