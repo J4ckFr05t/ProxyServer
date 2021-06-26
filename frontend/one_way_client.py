@@ -19,7 +19,7 @@ try:
 	#print(colored("connected to File Server\n",'white'))
 except Exception as e:
 	#print(colored("[INFO] ",'green'),end="")
-	print(colored("Unable to connect to File Server\n",'white'))
+	print("Unable to connect to File Server\n")
 	sys.exit()
 
 def client(filename):
@@ -36,9 +36,9 @@ def client(filename):
 
 				message = sock.recv(2048)
 				if message.decode() == "exit":
-					print(colored("Lost connection with Proxy Server",'cyan'))
+					print("Lost connection with Proxy Server")
 				else:
-					print(colored(message.decode(),'cyan'))
+					print(message.decode())
 
 				sock.close()
 				break

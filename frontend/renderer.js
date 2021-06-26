@@ -13,6 +13,6 @@ document.getElementById("search").addEventListener("click", function() {
 
     PythonShell.run('one_way_client.py', options, function(err,results){
       if (err) throw err;
-      alert(results);
+      alert(results)
     });
 });
