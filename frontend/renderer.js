@@ -11,7 +11,7 @@ document.getElementById("search").addEventListener("click", function() {
       args: [filename]
     };
 
-    PythonShell.run('hello.py', options, function(err,results){
+    PythonShell.run('one_way_client.py', options, function(err,results){
       if (err) throw err;
       alert(results);
     });
