@@ -1,5 +1,65 @@
-2021-06-27 18:34:28,658 Server running on port 8888
-2021-06-27 18:34:35,424 127.0.0.1:49789 connected
-2021-06-27 18:34:35,424 Closing Proxy Server socket
-2021-06-27 18:34:35,424 Shutting down
-2021-06-27 18:34:35,424 Server has shutdown
+2021-06-27 18:36:09,094 Server running on port 8888
+2021-06-27 18:36:19,498 127.0.0.1:49794 connected
+2021-06-27 18:36:19,499 127.0.0.1:49794 Requesting p_www/file1
+2021-06-27 18:36:19,499 file1 found in Proxy Server. Sending to 127.0.0.1:49794
+2021-06-27 18:36:19,701 127.0.0.1:49795 connected
+2021-06-27 18:36:19,701 127.0.0.1:49795 Requesting p_www/file1
+2021-06-27 18:36:19,701 file1 found in Proxy Server. Sending to 127.0.0.1:49795
+2021-06-27 18:36:29,861 127.0.0.1:49797 connected
+2021-06-27 18:36:29,862 127.0.0.1:49797 Requesting p_www/file2
+2021-06-27 18:36:29,862 p_www/file2 not found in Proxy Server. Requesting from Server
+2021-06-27 18:36:29,863 Unable to fetch file / file not found
+2021-06-27 18:36:29,864 [Errno 61] Connection refused
+2021-06-27 18:36:30,081 127.0.0.1:49799 connected
+2021-06-27 18:36:30,082 127.0.0.1:49799 Requesting p_www/file2
+2021-06-27 18:36:30,082 p_www/file2 not found in Proxy Server. Requesting from Server
+2021-06-27 18:36:30,082 Unable to fetch file / file not found
+2021-06-27 18:36:30,083 [Errno 61] Connection refused
+2021-06-27 18:36:40,068 127.0.0.1:49803 connected
+2021-06-27 18:36:40,069 127.0.0.1:49803 Requesting p_www/file2
+2021-06-27 18:36:40,070 p_www/file2 not found in Proxy Server. Requesting from Server
+2021-06-27 18:36:40,070 Connected to Server. Fetching file2 from server
+2021-06-27 18:36:40,072 Writing p_www/file2 to Proxy Server
+2021-06-27 18:36:40,294 127.0.0.1:49805 connected
+2021-06-27 18:36:40,295 127.0.0.1:49805 Requesting p_www/file2
+2021-06-27 18:36:40,296 file2 found in Proxy Server. Sending to 127.0.0.1:49805
+2021-06-27 18:36:51,156 127.0.0.1:49807 connected
+2021-06-27 18:36:51,157 127.0.0.1:49807 Requesting p_www/file2
+2021-06-27 18:36:51,159 file2 found in Proxy Server. Sending to 127.0.0.1:49807
+2021-06-27 18:36:51,388 127.0.0.1:49808 connected
+2021-06-27 18:36:51,389 127.0.0.1:49808 Requesting p_www/file2
+2021-06-27 18:36:51,390 file2 found in Proxy Server. Sending to 127.0.0.1:49808
+2021-06-27 18:36:57,427 127.0.0.1:49809 connected
+2021-06-27 18:36:57,428 127.0.0.1:49809 Requesting p_www/file3
+2021-06-27 18:36:57,429 p_www/file3 not found in Proxy Server. Requesting from Server
+2021-06-27 18:36:57,430 Unable to fetch file / file not found
+2021-06-27 18:36:57,430 [Errno 61] Connection refused
+2021-06-27 18:36:57,660 127.0.0.1:49811 connected
+2021-06-27 18:36:57,660 127.0.0.1:49811 Requesting p_www/file3
+2021-06-27 18:36:57,661 p_www/file3 not found in Proxy Server. Requesting from Server
+2021-06-27 18:36:57,663 Unable to fetch file / file not found
+2021-06-27 18:36:57,663 [Errno 61] Connection refused
+2021-06-27 18:37:04,287 127.0.0.1:49814 connected
+2021-06-27 18:37:04,288 Closing Proxy Server socket
+2021-06-27 18:37:04,288 Shutting down
+2021-06-27 18:37:04,288 something went wrong
+2021-06-27 18:37:04,288 [Errno 54] Connection reset by peer
+2021-06-27 18:37:04,289 something went wrong
+2021-06-27 18:37:04,289 [Errno 9] Bad file descriptor
+2021-06-27 18:37:04,290 something went wrong
+2021-06-27 18:37:04,290 [Errno 9] Bad file descriptor
+2021-06-27 18:37:04,291 something went wrong
+2021-06-27 18:37:04,291 something went wrong
+2021-06-27 18:37:04,291 [Errno 9] Bad file descriptor
+2021-06-27 18:37:04,291 something went wrong
+2021-06-27 18:37:04,291 [Errno 54] Connection reset by peer
+2021-06-27 18:37:04,292 something went wrong
+2021-06-27 18:37:04,292 [Errno 9] Bad file descriptor
+2021-06-27 18:37:04,292 something went wrong
+2021-06-27 18:37:04,292 [Errno 9] Bad file descriptor
+2021-06-27 18:37:04,292 something went wrong
+2021-06-27 18:37:04,293 something went wrong
+2021-06-27 18:37:04,293 [Errno 54] Connection reset by peer
+2021-06-27 18:37:04,293 [Errno 54] Connection reset by peer
+2021-06-27 18:37:04,293 [Errno 9] Bad file descriptor
+2021-06-27 18:37:04,294 Server has shutdown
