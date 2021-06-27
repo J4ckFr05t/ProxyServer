@@ -1,6 +1,9 @@
-2021-06-27 18:34:29,887 Using Public Directory /Users/jibingeorge/Documents/NP/ProxyServer/frontend/servers/s_www/
-2021-06-27 18:34:29,888 Server running on port 8081
-2021-06-27 18:34:35,186 127.0.0.1:49788 connected
-2021-06-27 18:34:35,187 Got shutdown signal
-2021-06-27 18:34:35,187 Closing server socket
-2021-06-27 18:34:35,187 Server has shutdown
+2021-06-27 18:36:34,274 Using Public Directory /Users/jibingeorge/Documents/NP/ProxyServer/frontend/servers/s_www/
+2021-06-27 18:36:34,275 Server running on port 8081
+2021-06-27 18:36:40,070 127.0.0.1:49804 connected
+2021-06-27 18:36:40,071 Sending /Users/jibingeorge/Documents/NP/ProxyServer/frontend/servers/s_www/file2 to 127.0.0.1:49804
+2021-06-27 18:36:40,072 127.0.0.1:49804 left server
+2021-06-27 18:36:44,739 127.0.0.1:49806 connected
+2021-06-27 18:36:44,740 Got shutdown signal
+2021-06-27 18:36:44,740 Closing server socket
+2021-06-27 18:36:44,740 Server has shutdown
