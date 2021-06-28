@@ -1,2 +1,7 @@
 <p id="content"></p>
-<script src="./renderer.js"></script>
+<script>
+	const params = (new URL(document.location)).searchParams;
+	const file = params.get('name')
+
+	document.getElementById("content").innerHTML = file
+</script>
