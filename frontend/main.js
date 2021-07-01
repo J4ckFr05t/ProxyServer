@@ -18,10 +18,10 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
-  mainWindow.webContents.setWindowOpenHandler(({ url, frameName }) => {
-    mainWindow.loadURL(url)
-  return { action: 'deny' };
-});
+//   mainWindow.webContents.setWindowOpenHandler(({ url, frameName }) => {
+//     mainWindow.loadURL(url)
+//   return { action: 'deny' };
+// });
   // Open the DevTools.
   //mainWindow.webContents.openDevTools()
 }

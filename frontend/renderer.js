@@ -14,6 +14,6 @@ document.getElementById("search").addEventListener("click", function() {
     PythonShell.run('one_way_client.py', options, function(err,results){
       if (err) throw err;
       // alert(results)
-      window.open("child.html?name="+results, null, 'minimizable=false')
+      window.open("child.html?name="+results,'_blank')
     });
 });
