@@ -1,1 +1,45 @@
 2021-06-28 19:14:00,397 Server running on port 8888
+2021-06-28 19:14:14,402 127.0.0.1:55034 connected
+2021-06-28 19:14:14,465 127.0.0.1:55035 connected
+2021-06-28 19:14:14,465 127.0.0.1:55034 Requesting www/file1
+2021-06-28 19:14:14,465 127.0.0.1:55035 Requesting www/file1
+2021-06-28 19:14:14,466 file1 found in Proxy Server. Sending to 127.0.0.1:55034
+2021-06-28 19:14:14,466 file1 found in Proxy Server. Sending to 127.0.0.1:55035
+2021-06-28 19:14:58,335 127.0.0.1:55039 connected
+2021-06-28 19:14:58,336 127.0.0.1:55039 Requesting www/file1
+2021-06-28 19:14:58,337 file1 found in Proxy Server. Sending to 127.0.0.1:55039
+2021-06-28 19:14:58,364 127.0.0.1:55040 connected
+2021-06-28 19:14:58,365 127.0.0.1:55040 Requesting www/file1
+2021-06-28 19:14:58,366 file1 found in Proxy Server. Sending to 127.0.0.1:55040
+2021-06-28 19:15:39,068 127.0.0.1:55043 connected
+2021-06-28 19:15:39,069 127.0.0.1:55043 Requesting www/file2
+2021-06-28 19:15:39,071 file2 found in Proxy Server. Sending to 127.0.0.1:55043
+2021-06-28 19:16:37,184 127.0.0.1:55049 connected
+2021-06-28 19:16:37,185 127.0.0.1:55049 Requesting www/file1
+2021-06-28 19:16:37,188 file1 found in Proxy Server. Sending to 127.0.0.1:55049
+2021-06-28 19:16:41,751 127.0.0.1:55050 connected
+2021-06-28 19:16:41,752 127.0.0.1:55050 Requesting www/file1
+2021-06-28 19:16:41,753 file1 found in Proxy Server. Sending to 127.0.0.1:55050
+2021-06-28 19:17:23,324 127.0.0.1:55058 connected
+2021-06-28 19:17:23,326 127.0.0.1:55058 Requesting www/file1
+2021-06-28 19:17:23,329 file1 found in Proxy Server. Sending to 127.0.0.1:55058
+2021-06-28 19:17:23,440 127.0.0.1:55059 connected
+2021-06-28 19:17:23,442 127.0.0.1:55059 Requesting www/file1
+2021-06-28 19:17:23,444 file1 found in Proxy Server. Sending to 127.0.0.1:55059
+2021-06-28 19:17:53,679 127.0.0.1:65054 connected
+2021-06-28 19:17:53,681 127.0.0.1:65054 Requesting www/file1
+2021-06-28 19:17:53,683 file1 found in Proxy Server. Sending to 127.0.0.1:65054
+2021-06-28 19:17:53,690 127.0.0.1:65055 connected
+2021-06-28 19:17:53,691 127.0.0.1:65055 Requesting www/file1
+2021-06-28 19:17:53,693 file1 found in Proxy Server. Sending to 127.0.0.1:65055
+2021-06-28 19:19:00,346 127.0.0.1:65065 connected
+2021-06-28 19:19:00,348 127.0.0.1:65065 Requesting www/file1
+2021-06-28 19:19:00,350 file1 found in Proxy Server. Sending to 127.0.0.1:65065
+2021-06-28 19:19:17,299 127.0.0.1:65066 connected
+2021-06-28 19:19:17,300 127.0.0.1:65066 Requesting www/file1
+2021-06-28 19:19:17,303 file1 found in Proxy Server. Sending to 127.0.0.1:65066
+2021-06-28 19:19:37,428 127.0.0.1:65069 connected
+2021-06-28 19:19:37,430 127.0.0.1:65069 Requesting www/fil1
+2021-06-28 19:19:37,432 www/fil1 not found in Proxy Server. Requesting from Server
+2021-06-28 19:19:39,437 Unable to fetch file / file not found
+2021-06-28 19:19:39,437 [WinError 10061] No connection could be made because the target machine actively refused it

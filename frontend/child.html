@@ -1,5 +1,5 @@
 <head>
-    <script language="javascript" type="text/javascript" src="renderer.js"></script>
+    <script language="javascript" type="text/javascript"></script>
 </head>
 
 <body>
@@ -12,19 +12,21 @@
         </table>
     </form>
     <script>
-        window.onload = function() {
-            var url = document.location.href,
-                params = url.split('?')[1].split('&'),
-                data = {},
-                tmp;
-            alert(document.location.href)
-            for (var i = 0, l = params.length; i < l; i++) {
-                tmp = params[i].split('=');
-                data[tmp[0]] = tmp[1];
+        function getParams() {
+            var idx = document.URL.indexOf('?');
+            var params = new Array();
+            if (idx != -1) {
+                var pairs = document.URL.substring(idx + 1, document.URL.length).split('&');
+                for (var i = 0; i < pairs.length; i++) {
+                    nameVal = pairs[i].split('=');
+                    params[nameVal[0]] = nameVal[1];
+                }
             }
-
-            document.getElementById('here').innerHTML = data.search;
+            return params;
         }
+        params = getParams();
+        firstname = unescape(params["data"]);
+        document.write(firstname + "<br>");
     </script>
 </body>
 

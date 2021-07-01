@@ -8,11 +8,11 @@
 </head>
 
 <body>
-    <form action="child.html" class="search-bar">
+    <form class="search-bar">
         <input id="filein" type="search" name="search" pattern=".*\S.*" required>
         <button id="search" class="search-btn" type="submit">
-			<span>Search</span>
-		</button>
+            <span>Search</span>
+        </button>
         <script>
             var input = document.getElementById("filein");
             input.addEventListener("keyup", function(event) {
