@@ -18,7 +18,10 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
-
+  mainWindow.webContents.on('new-window', (event, url) => {
+      event.preventDefault()
+      mainWindow.loadURL(url)
+  })
   // Open the DevTools.
   //mainWindow.webContents.openDevTools()
 }
