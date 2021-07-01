@@ -1,9 +1,56 @@
-2021-06-20 10:34:27,948 Using Public Directory /Users/jibingeorge/Documents/NP/ProxyServer/server/www/
-2021-06-20 10:34:27,948 Server running on port 8081
-2021-06-20 10:34:35,646 127.0.0.1:49457 connected
-2021-06-20 10:34:35,647 Sending /Users/jibingeorge/Documents/NP/ProxyServer/server/www/file3 to 127.0.0.1:49457
-2021-06-20 10:34:35,647 127.0.0.1:49457 left server
-2021-06-20 10:34:43,277 127.0.0.1:49459 connected
-2021-06-20 10:34:43,277 Got shutdown signal
-2021-06-20 10:34:43,277 Closing server socket
-2021-06-20 10:34:43,278 Server has shutdown
+2021-06-26 14:24:28,833 Using Public Directory C:\Users\91974\Desktop\Projects\ProxyServer\server/www/
+2021-06-26 14:24:28,835 Server running on port 8081
+2021-06-26 14:25:29,160 127.0.0.1:62153 connected
+2021-06-26 14:25:29,162 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/helo not found in Server
+2021-06-26 14:25:29,163 127.0.0.1:62153 left server
+2021-06-26 14:26:33,064 127.0.0.1:55718 connected
+2021-06-26 14:26:33,065 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/helo not found in Server
+2021-06-26 14:26:33,065 127.0.0.1:55719 connected
+2021-06-26 14:26:33,066 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/helo not found in Server
+2021-06-26 14:26:33,067 127.0.0.1:55718 left server
+2021-06-26 14:26:33,068 127.0.0.1:55719 left server
+2021-06-26 14:28:28,335 127.0.0.1:59673 connected
+2021-06-26 14:28:28,336 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/fiel1 not found in Server
+2021-06-26 14:28:28,338 127.0.0.1:59673 left server
+2021-06-26 14:28:28,370 127.0.0.1:59675 connected
+2021-06-26 14:28:28,371 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/fiel1 not found in Server
+2021-06-26 14:28:28,373 127.0.0.1:59675 left server
+2021-06-26 14:29:40,294 127.0.0.1:59692 connected
+2021-06-26 14:29:40,295 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/helo\ not found in Server
+2021-06-26 14:29:40,297 127.0.0.1:59692 left server
+2021-06-26 14:29:40,299 127.0.0.1:59693 connected
+2021-06-26 14:29:40,301 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/helo\ not found in Server
+2021-06-26 14:29:40,302 127.0.0.1:59693 left server
+2021-06-26 14:32:17,195 127.0.0.1:61900 connected
+2021-06-26 14:32:17,197 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/helo not found in Server
+2021-06-26 14:32:17,198 127.0.0.1:61900 left server
+2021-06-26 14:32:17,219 127.0.0.1:61902 connected
+2021-06-26 14:32:17,220 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/helo not found in Server
+2021-06-26 14:32:17,222 127.0.0.1:61902 left server
+2021-06-26 14:37:24,509 127.0.0.1:57471 connected
+2021-06-26 14:37:24,511 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/helo not found in Server
+2021-06-26 14:37:24,513 127.0.0.1:57471 left server
+2021-06-26 14:37:24,622 127.0.0.1:57473 connected
+2021-06-26 14:37:24,624 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/helo not found in Server
+2021-06-26 14:37:24,628 127.0.0.1:57473 left server
+2021-06-26 14:47:51,156 127.0.0.1:55483 connected
+2021-06-26 14:47:51,158 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/hi not found in Server
+2021-06-26 14:47:51,161 127.0.0.1:55483 left server
+2021-06-26 14:50:17,150 127.0.0.1:52272 connected
+2021-06-26 14:50:17,156 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/hi not found in Server
+2021-06-26 14:50:17,160 127.0.0.1:52273 connected
+2021-06-26 14:50:17,163 127.0.0.1:52272 left server
+2021-06-26 14:50:17,165 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/hi not found in Server
+2021-06-26 14:50:17,194 127.0.0.1:52273 left server
+2021-06-26 14:51:37,917 127.0.0.1:54702 connected
+2021-06-26 14:51:37,923 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/hi not found in Server
+2021-06-26 14:51:37,926 127.0.0.1:54703 connected
+2021-06-26 14:51:37,930 127.0.0.1:54702 left server
+2021-06-26 14:51:37,933 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/hi not found in Server
+2021-06-26 14:51:37,935 127.0.0.1:54703 left server
+2021-06-26 14:54:41,705 127.0.0.1:52711 connected
+2021-06-26 14:54:41,710 127.0.0.1:52712 connected
+2021-06-26 14:54:41,714 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/hi not found in Server
+2021-06-26 14:54:41,719 C:\Users\91974\Desktop\Projects\ProxyServer\server/www/hi not found in Server
+2021-06-26 14:54:41,721 127.0.0.1:52711 left server
+2021-06-26 14:54:41,724 127.0.0.1:52712 left server
